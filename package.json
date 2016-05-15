@@ -1,0 +1,15 @@
+{
+  "name": "dataloader",
+  "version": "0.0.0",
+  "description": "",
+  "main": "runner.js",
+  "scripts": {
+    "start": "node runner.js"
+  },
+  "author": "Jesus Ferrer",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.11.0",
+    "faker": "^3.1.0"
+  }
+}
