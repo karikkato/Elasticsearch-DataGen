@@ -4,13 +4,30 @@
   "description": "",
   "main": "elasticsearch-datagen.js",
   "scripts": {
-    "start": "node elasticsearch-datagen.js"
+    "start": "node elasticsearch-datagen.js",
+    "build": "rm -rf lib/ && tsc --project tsconfig.build.json"
   },
   "author": "Jesus Ferrer",
   "license": "ISC",
+  "devDependencies": {
+    "@types/faker": "^5.5.5",
+    "@types/json-schema": "^7.0.7",
+    "@types/json-schema-faker": "^0.5.1",
+    "@types/node": "^15.3.1",
+    "@typescript-eslint/eslint-plugin": "^4.24.0",
+    "@typescript-eslint/parser": "^4.24.0",
+    "eslint": "^7.26.0",
+    "eslint-config-js": "git+https://bitbucket.org/Karikkato/eslint-config-js.git",
+    "eslint-plugin-import": "^2.23.2",
+    "eslint-plugin-react": "^7.23.2",
+    "eslint-plugin-react-hooks": "^4.2.0",
+    "typescript": "^4.2.4"
+  },
   "dependencies": {
-    "dateformat": "^1.0.12",
-    "elasticsearch": "^11.0.1",
-    "faker": "^3.1.0"
+    "dateformat": "^4.5.1",
+    "elasticsearch": "^16.7.2",
+    "faker": "^5.5.3",
+    "json-schema": "^0.3.0",
+    "json-schema-faker": "^0.5.0-rcv.34"
   }
 }

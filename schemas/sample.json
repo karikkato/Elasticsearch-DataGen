@@ -1,0 +1,62 @@
+{
+  "type": "object",
+  "properties": {
+    "name": {
+      "type": "string"
+    },
+    "age": {
+      "type": "integer",
+      "minimum": 10,
+      "maximum": 100
+    },
+    "married": {
+      "type": "boolean",
+      "faker": "datatype.boolean"
+    },
+    "bs1": {
+      "type": "string",
+      "faker": "company.bs"
+    },
+    "bs2": {
+      "type": "string",
+      "faker": "company.bs"
+    },
+    "bs3": {
+      "type": "string",
+      "faker": "company.bs"
+    },
+    "bs4": {
+      "type": "string",
+      "faker": "company.bs"
+    },
+    "bs5": {
+      "type": "string",
+      "faker": "company.bs"
+    },
+    "catch": {
+      "type": "string",
+      "faker": "company.catchPhrase"
+    },
+    "bsBuzz": {
+      "type": "string",
+      "faker": "company.bsBuzz"
+    },
+    "email": {
+      "type": "string",
+      "faker": "internet.email"
+    }
+  },
+  "required": [
+    "name",
+    "age",
+    "married",
+    "bs1",
+    "bs2",
+    "bs3",
+    "bs4",
+    "bs5",
+    "bsBuzz",
+    "catch",
+    "email"
+  ]
+}

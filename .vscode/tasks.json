@@ -1,0 +1,30 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+        {
+            "label": "build",
+            "type": "typescript",
+            "group": "build",
+            "tsconfig": "tsconfig.build.json",
+            "problemMatcher": [
+                "$tsc"
+            ],
+            "presentation": {
+                "clear": true,
+                "group": "debugging"
+            }
+        },
+        {
+            "label": "run",
+            "type": "shell",
+            "command": "node",
+            "args": [
+                "lib/index.js"
+            ],
+            "presentation": {
+                "clear": true,
+                "group": "debugging"
+            }
+        }
+    ]
+}

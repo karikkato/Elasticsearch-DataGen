@@ -1,0 +1,22 @@
+{
+  "compilerOptions": {
+    "declaration": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "module": "commonjs",
+    "outDir": "./lib",
+    "skipLibCheck": true,
+    "sourceMap": true,
+    "strict": true,
+    "target": "es6",
+    "watch": false,
+    "typeRoots":
+    [
+      "./src/types",
+      "./node_modules/@types",
+    ]
+  },
+  "include": [
+    "src/"
+  ]
+}
