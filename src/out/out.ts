@@ -1,9 +1,9 @@
-export interface out
+export interface Out
 {
     output: (obj: unknown) => void
 }
 
-export class defaultOut implements out
+export class defaultOut implements Out
 {
     public output(obj: unknown): void
     {

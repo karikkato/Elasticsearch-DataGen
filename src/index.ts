@@ -1,12 +1,17 @@
 import {Generator} from './generator/generator'
 import {jsfGenerator} from './generator/jsfGenerator'
-import {out, defaultOut} from './out/out'
+import {defaultOut, Out} from './out/out'
 
-;(function main()
+export function defaultRunner(generator: Generator, out: Out, iterations: number): void
+{
+    for(let i = 0; i < iterations; i++)
+        out.output(generator.generate())
+}
+
+(function main()
 {
     const generator: Generator = new jsfGenerator('C:/JavaScript/jferrer/@playground/elasticsearch-datagen/schemas/sample.json')
-    const output: out = new defaultOut()
+    const output: Out = new defaultOut()
 
-    for(let i = 1; i < 50; i++)
-        output.output(generator.generate())
+    defaultRunner(generator, output, 50)
 })()
