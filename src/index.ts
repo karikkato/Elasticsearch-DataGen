@@ -1,12 +1,8 @@
 import {Generator} from './generator/generator'
 import {jsfGenerator} from './generator/jsfGenerator'
 import {defaultOut, Out} from './out/out'
+import {defaultRunner} from './runner'
 
-export function defaultRunner(generator: Generator, out: Out, iterations: number): void
-{
-    for(let i = 0; i < iterations; i++)
-        out.output(generator.generate())
-}
 
 (function main()
 {
